@@ -16,7 +16,6 @@
 
 package com.example.servingweb;
 
-import com.example.controller.ImageController;
 import com.example.controller.TextController;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -25,7 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-@WebMvcTest(controllers = {ImageController.class, TextController.class})
+@WebMvcTest(controllers = {TextController.class})
 public class MainApplicationTest {
 
 	@Autowired
