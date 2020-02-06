@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/html">
+<head> 
+    <title>censorREACT Text API</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table width="100%">
+    <tbody>
+        <form action="#" th:action="@{/text}" th:object="${payload}" method="post">
+            <tr>
+                <th>Your API Key</th>
+                <td><input size="84" type="text" th:field="*{apiKey}" /></td>
+            </tr>
+            <tr>
+                <th>Your Profile</th>
+                <td><input size="84" type="text" th:field="*{profile}" /></td>
+            </tr>
+            <tr>
+                <th>Your Payload</th>
+                <td><textarea rows="20" cols="80" th:field="*{text}" /></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Submit" /></td>
+            </tr>
+        </form>
+
+        <tr th:if="${response}">
+            <th>API Call Response</th>
+            <td style="padding-top:40px"><textarea rows="20" cols="80" th:field="*{response.data}" /></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
