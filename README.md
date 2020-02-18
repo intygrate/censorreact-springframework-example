@@ -1,6 +1,6 @@
 # Example integration with censorREACT from SpringFramework
 
-This simple SpringBoot application will show on how to call censorREACT Text and Image APIs from a Spring based application
+This simple SpringBoot application will show how to use censorREACT Text and Image APIs from a Spring based application
 
 ## Getting Started
 
